@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Demositeautomation {
 
 	public static void main(String[] args) {
-		WebDriver driver;
+		WebDriver driver;// declaring the driver first to drive the application
 		driver=new ChromeDriver();
 		driver.get("https://demo.automationtesting.in/Register.html");
 		driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("Abirami");
