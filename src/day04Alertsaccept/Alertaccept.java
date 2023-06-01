@@ -13,7 +13,7 @@ public class Alertaccept {
 		driver.get("https://demo.automationtesting.in/Alerts.html");
 		driver.findElement(By.xpath("//button[contains(text(),'click the button to display an  alert box' )]")).click();
 		System.out.println(driver.switchTo().alert().getText());
-		driver.switchTo().alert().accept();
+		driver.switchTo().alert().accept();// for ok in alert
 		
 		
 
