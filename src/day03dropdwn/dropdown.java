@@ -34,6 +34,8 @@ public class dropdown {
 				driver.findElement(By.xpath("//span[@class='select2-selection select2-selection--single']")).click();
 				driver.findElement(By.xpath("//input [@role='textbox']")).sendKeys("AUS");
 				driver.findElement(By.xpath("//li[@class='select2-results__option select2-results__option--highlighted']")).click();
+				//after entering aus in country australia is displayed below by clicking on that take xpath inspect uwill have li
+		
 			}
 
 		}
