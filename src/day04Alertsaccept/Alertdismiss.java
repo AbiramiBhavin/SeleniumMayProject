@@ -16,6 +16,7 @@ public class Alertdismiss {
 		driver.findElement(By.xpath("//button[contains(text(),'click the button to display a confirm box ')]")).click();
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().dismiss();// for cancel in alert
+		
 	}
 
 }
