@@ -18,7 +18,20 @@ public class Singleframess {
 		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Sample Text");
 		//this xpath is the xpath for textbox
 		driver.switchTo().defaultContent();// this is used to close the particular tab frame and jumps to next tab frame
-		driver.findElement(By.xpath("//a[text()='Iframe with in an Iframe']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Iframe with in an Iframe')]")).click();
+		
+		//MY TRIES FOR MULTIPLE FRAMES
+		// inspect for first frame by using keyword iframe and from that used style for xpath
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@style='float: left;height: 300px;width:600px']")));
+		// inspect for second frame using keyword iframe 
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@style='float: left;height: 250px;width: 400px']")));
+		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("HI WELCOME");
+		
+		
+				
+		
+		
+		
 
 		
 		
